@@ -81,7 +81,6 @@ main {
     width: calc(100% - 249px);
     margin: 15px 0 15px auto;
     padding: 0 25px;
-    background: linear-gradient(180deg, #90AEA7 0%, #000 89.7%);
 }
 
 div#userName {
@@ -268,6 +267,7 @@ div#playlist li span.albumTitle {
 }
 .detailPage main{
     margin-top:0;
+    background: linear-gradient(180deg, #90AEA7 0%, #000 89.7%);
 }
 .playBtn svg {
     vertical-align: middle;
