@@ -1,0 +1,284 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #282828;
+    color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    background: #000;
+    height: 92%;
+    padding: 30px 20px;
+}
+
+header ul li a {
+    font-size: 14px;
+    /* margin: 8px 0; */
+    line-height: 1;
+    /* vertical-align: text-top; */
+}
+
+header ul li a svg {
+    width: 14px;
+    line-height: 1;
+    height: auto;
+    margin: 0 2px 0 0;
+}
+
+header ul li a i {
+    margin: 0 2px 0 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header ul li {
+    margin: 3px 0;
+    padding: 3px;
+}
+
+a.logo {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 auto 30px;
+    display: block;
+}
+
+.userMenu,
+.tracksMenu {
+    margin: 30px auto;
+}
+
+main {
+    width: calc(100% - 249px);
+    margin: 15px 0 15px auto;
+    padding: 0 25px;
+    background: linear-gradient(180deg, #90AEA7 0%, #000 89.7%);
+}
+
+div#userName {
+    text-align: right;
+    font-style: italic;
+    font-weight: 600;
+}
+
+div#featuredWrapper {
+    display: grid;
+    gap: 30px 50px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 80px 80px;
+}
+
+.songTitle {
+    vertical-align: middle;
+    margin: 0 0 0 10px;
+}
+
+.controls i:hover {
+    opacity: 0.5;
+}
+
+.controls i {
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+article.cards {
+    vertical-align: top;
+    background: #000;
+    border-radius: 4px;
+}
+
+article.cards img {
+    max-width: 80px;
+    vertical-align: middle;
+    margin-right: 10px;
+    object-fit: fill;
+}
+
+#featuredWrapper i.fa-solid.fa-heart {
+    vertical-align: middle;
+    font-size: 30px;
+    padding: 25px;
+    border-radius: 4px 0px 0px 4px;
+    background: linear-gradient(135deg, #4000F4 0%, #603AED 22.48%, #7C6EE6 46.93%, #979FE1 65.71%, #A2B3DE 77.68%, #ADC8DC 88.93%, #C0ECD7 100%);
+    margin-right: 10px;
+}
+
+div#playlistWrapper {
+    display: grid;
+    gap: 30px 30px;
+    grid-template-columns: auto auto auto auto;
+    /* grid-template-rows: 80px 80px; */
+}
+
+a.seeMoreBtn {
+    display: inline-block;
+    color: #B3B3B3;
+}
+
+h2.sectionTitle {
+    display: inline-block;
+    width: 93%;
+}
+#playlistGrid .card:hover {
+    background-color: #383838;
+    cursor: pointer;
+    border-radius: 10px;
+}
+section#playlistDetail {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: #000;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+div#miniPlayer img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+div#miniPlayer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section#playlistGrid {
+    padding: 0 0 100px;
+}
+i.fa-solid.fa-circle-play {
+    font-size: 40px;
+    margin: 0 10px;
+    vertical-align: sub;
+}
+.deets {
+    font-size: 14px;
+}
+img.profilePic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 10px 0 0px;
+}
+.card img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+article.card {
+    padding: 8px;
+    width: 100%;
+}
+.deets span {
+    font-size: 10px;
+    display: block;
+    margin: 5px auto;
+    color: #b3b3b3;
+}
+
+header ul li:hover {
+    background: #282828;
+    border-radius: 5px;
+}
+.currentTrackCover img {
+    max-width: 135px;
+}
+
+.currentTrackCover {
+    margin: 80px auto 0;
+}
+
+section#detailPageBanner {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+article.leftWrap {
+    max-width: 190px;
+    margin: 0 50px 0 0;
+}
+h1.sectionTitle {
+    font-size: 50px;
+    margin: 15px auto;
+    font-weight: 700;
+}
+
+article.rightWrap {
+    font-size: 12px;
+}
+
+article.rightWrap p {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
+div#playlist {
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+div#playlist li {
+    margin: 20px 0;
+    display: flex;
+    justify-content: start;
+}
+
+div#playlist li span {
+    margin: 0 10px;
+}
+
+div#playlist li span.albumTitle {
+    margin: 0 200px;
+}
+.detailPage main{
+    margin-top:0;
+}
+.playBtn svg {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#playlist img {
+    width: 20px;
+}
+
+i.fa-solid.fa-heart {
+    font-size: 40px;
+    vertical-align: middle;
+}

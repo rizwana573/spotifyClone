@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="icon" href="../images/favicon.png" sizes="48x48" />
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/61be152cd0.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="detailPage">
+    <header>
+        <!-- Header content -->
+        <div class="logoNavigation">
+            <a class="logo"><i class="fa-brands fa-spotify"></i> Spotify</a>
+            <ul class="mainMenu">
+                <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="29"
+                            viewBox="0 0 29 29" fill="none">
+                            <rect x="0.997498" y="0.15979" width="1.23522" height="28.4101"
+                                fill="white" />
+                            <rect x="9.64404" y="0.15979" width="1.23522" height="28.4101"
+                                fill="white" />
+                            <rect x="15.8201" y="0.655029" width="1.23522" height="29.3017"
+                                transform="rotate(-23.634 15.8201 0.655029)" fill="white" />
+                        </svg> Your Library</a></li>
+            </ul>
+        </div>
+        <div class="userMenu">
+            <ul>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="31"
+                            viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M16.8201 14.0944V7.91833H14.3497V14.0944H8.17358V16.5649H14.3497V22.741H16.8201V16.5649H22.9962V14.0944H16.8201Z"
+                                fill="white" />
+                        </svg> Create Playlist</a></li>
+                <li><a href="#"><span class="heart"><i class="fa-solid fa-heart"></i></span> Liked
+                        Songs</a></li>
+                
+            </ul>
+        </div>
+        <div class="currentTrackCover">
+          <img src="../images/currentCover.jpg" alt="current track cover image">
+        </div>
+
+    </header>
+    <main>  
+        <section id="detailPageBanner">
+            <article class="leftWrap">
+                <img src="../images/card1.png" alt="playlist cover">
+            </article>
+            <article class="rightWrap">
+                <h4>Playlist</h4>
+            <h1 class="sectionTitle">Pop Right Now</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus</p>
+            <p><bold>Spotify</bold> 860,305 likes, 100 songs, 5 hr 5 min</p>
+            </article>
+        </section>
+        <section id="musicPlayer">
+            <!-- Music Player content -->
+            
+            <div id="playlist">
+                <div class="playBtn">
+                    <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 27.5C0 12.3122 12.3122 0 27.5 0C42.6878 0 55 12.3122 55 27.5C55 42.6878 42.6878 55 27.5 55C12.3122 55 0 42.6878 0 27.5Z" fill="#1DB954"/>
+                    <path d="M39 27.5L21 17V38L39 27.5Z" fill="white"/>
+                    </svg>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+<ol>
+    <li>
+        <span>1</span>
+        <span><img src="../images/trackCover.jpg"></span>
+        <span class="trackName">Track 1</span>
+        <span class="albumTitle">Future Nostalgia (The Moonlight Edition)</span>
+        <span class="duration">4:53</span>
+    </li>
+    <li>
+        <span>2</span>
+        <span><img src="../images/trackCover.jpg"></span>
+        <span class="trackName">Track 2</span>
+        <span class="albumTitle">Future Nostalgia (The Moonlight Edition)</span>
+        <span class="duration">2:33</span>
+    </li>
+    <li>
+        <span>3</span>
+        <span><img src="../images/trackCover.jpg"></span>
+        <span class="trackName">Track 3</span>
+        <span class="albumTitle">Future Nostalgia (The Moonlight Edition)</span>
+        <span class="duration">3:22</span>
+    </li>
+    <li>
+        <span>4</span>
+        <span><img src="../images/trackCover.jpg"></span>
+        <span class="trackName">Track 4</span>
+        <span class="albumTitle">Future Nostalgia (The Moonlight Edition)</span>
+        <span class="duration">4:53</span>
+    </li>
+    <li>
+        <span>5</span>
+        <span><img src="../images/trackCover.jpg"></span>
+        <span class="trackName">Track 5</span>
+        <span class="albumTitle">Future Nostalgia (The Moonlight Edition)</span>
+        <span class="duration">2:33</span>
+    </li>
+    <li>
+        <span>6</span>
+        <span><img src="../images/trackCover.jpg"></span>
+        <span class="trackName">Track 6</span>
+        <span class="albumTitle">Future Nostalgia (The Moonlight Edition)</span>
+        <span class="duration">3:22</span>
+    </li>
+</ol>
+            </div>
+        </section>
+        
+        <section id="playlistDetail">
+            <div id="miniPlayer">
+                <!-- <img src="../images/card2.png"> -->
+                <div class="songTitle">
+                    Dreaming On..
+                </div>
+            </div>
+            <div class="player">
+                <div class="controls">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+            </div>
+            <div class="soundList">
+                <svg width="189" height="15" viewBox="0 0 189 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Group 9">
+                    <g id="Group 6">
+                    <line id="Line 1" x1="9" y1="4.5" x2="16" y2="4.5" stroke="white"/>
+                    <line id="Line 2" x1="1" y1="8.5" x2="16" y2="8.5" stroke="white"/>
+                    <line id="Line 3" x1="1" y1="12.5" x2="16" y2="12.5" stroke="white"/>
+                    <path id="Polygon 1" d="M6 4L1.5 6.59808L1.5 1.40192L6 4Z" fill="white"/>
+                    </g>
+                    <g id="Group 7">
+                    <rect id="Rectangle 13" x="42.8228" y="1" width="8" height="12" rx="0.5" stroke="white"/>
+                    <circle id="Ellipse 2" cx="46.8228" cy="8.5" r="1.5" stroke="white"/>
+                    <circle id="Ellipse 3" cx="46.8228" cy="3.5" r="0.5" stroke="white"/>
+                    <path id="Vector 1" d="M39.9751 0.855469H35.6768C35.1245 0.855469 34.6768 1.30318 34.6768 1.85547V9.19049C34.6768 9.74278 35.1245 10.1905 35.6768 10.1905H39.9751" stroke="white"/>
+                    <line id="Line 4" x1="37.3511" y1="12.9199" x2="39.9751" y2="12.9199" stroke="white"/>
+                    </g>
+                    <path id="Vector" d="M80.945 0.208496L80.293 1.00329C81.87 2.5262 82.863 4.69496 82.863 7.10537C82.863 9.51579 81.869 11.6845 80.293 13.2075L80.944 14.0022C81.8641 13.1272 82.5991 12.0619 83.102 10.8745C83.6048 9.68705 83.8646 8.40346 83.8647 7.1056C83.8648 5.80775 83.6052 4.52411 83.1025 3.33659C82.5998 2.14906 81.865 1.08371 80.945 0.208496ZM78.673 2.97933L78.022 3.77412C78.4467 4.20893 78.784 4.72752 79.0143 5.2996C79.2445 5.87168 79.363 6.4858 79.3629 7.10611C79.3628 7.72643 79.2441 8.34051 79.0137 8.91251C78.7833 9.48452 78.4458 10.003 78.021 10.4377L78.672 11.2325C79.712 10.1908 80.363 8.72829 80.363 7.10641C80.363 5.48454 79.713 4.021 78.673 2.97933ZM68 3.98037V10.2304H70.804L76 13.3554V0.855371L70.804 3.98037H68ZM75 2.65954V11.5512L71.072 9.18871H69V5.02204H71.072L75 2.65954Z" fill="white"/>
+                    <rect id="Rectangle 14" x="92" y="5" width="97" height="4" rx="2" fill="#C4C4C4"/>
+                    </g>
+                    </svg>                    
+            </div>
+        </section>
+        <section id="browse">
+            <!-- Browse Section content -->
+        </section>
+    </main>
+</body>
+
+</html>

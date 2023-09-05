@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="icon" href="images/favicon.png" sizes="48x48" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/61be152cd0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Header content -->
+        <div class="logoNavigation">
+            <a class="logo"><i class="fa-brands fa-spotify"></i> Spotify</a>
+            <ul class="mainMenu">
+                <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="29"
+                            viewBox="0 0 29 29" fill="none">
+                            <rect x="0.997498" y="0.15979" width="1.23522" height="28.4101"
+                                fill="white" />
+                            <rect x="9.64404" y="0.15979" width="1.23522" height="28.4101"
+                                fill="white" />
+                            <rect x="15.8201" y="0.655029" width="1.23522" height="29.3017"
+                                transform="rotate(-23.634 15.8201 0.655029)" fill="white" />
+                        </svg> Your Library</a></li>
+            </ul>
+        </div>
+        <div class="userMenu">
+            <ul>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="31"
+                            viewBox="0 0 31 31" fill="none">
+                            <path
+                                d="M16.8201 14.0944V7.91833H14.3497V14.0944H8.17358V16.5649H14.3497V22.741H16.8201V16.5649H22.9962V14.0944H16.8201Z"
+                                fill="white" />
+                        </svg> Create Playlist</a></li>
+                <li><a href="#"><span class="heart"><i class="fa-solid fa-heart"></i></span> Liked
+                        Songs</a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                            viewBox="0 0 20 18" fill="none">
+                            <path
+                                d="M4.63432 15.7873C3.53306 14.686 2.78309 13.2829 2.47926 11.7554C2.17543 10.2279 2.33137 8.64462 2.92738 7.20574C3.52339 5.76687 4.53269 4.53704 5.82764 3.67178C7.1226 2.80652 8.64506 2.34469 10.2025 2.34469C11.7599 2.34469 13.2824 2.80652 14.5773 3.67178C15.8723 4.53704 16.8816 5.76687 17.4776 7.20574C18.0736 8.64462 18.2296 10.2279 17.9257 11.7554C17.6219 13.2829 16.8719 14.686 15.7707 15.7873L17.0078 17.0245C17.9029 16.1318 18.6127 15.071 19.0965 13.9031C19.5803 12.7352 19.8285 11.4833 19.8269 10.2192C19.8269 4.90384 15.5178 0.594727 10.2025 0.594727C4.88718 0.594727 0.578064 4.90384 0.578064 10.2192C0.578064 12.8772 1.65512 15.2833 3.39715 17.0245L4.63432 15.7873Z"
+                                fill="#159643" />
+                            <path
+                                d="M14.5335 14.5502C15.39 13.6936 15.9732 12.6023 16.2095 11.4142C16.4458 10.2262 16.3245 8.99476 15.8609 7.87566C15.3973 6.75657 14.6123 5.80007 13.6051 5.12711C12.5979 4.45416 11.4138 4.09497 10.2025 4.09497C8.9912 4.09497 7.8071 4.45416 6.79992 5.12711C5.79274 5.80007 5.00773 6.75657 4.54415 7.87566C4.08058 8.99476 3.95925 10.2262 4.19552 11.4142C4.43179 12.6023 5.01504 13.6936 5.87153 14.5502L7.10958 13.313C6.49775 12.7012 6.08109 11.9217 5.91228 11.073C5.74347 10.2244 5.8301 9.3448 6.16122 8.54542C6.49233 7.74604 7.05305 7.06279 7.77247 6.58208C8.49189 6.10138 9.33771 5.8448 10.203 5.8448C11.0682 5.8448 11.914 6.10138 12.6334 6.58208C13.3529 7.06279 13.9136 7.74604 14.2447 8.54542C14.5758 9.3448 14.6624 10.2244 14.4936 11.073C14.3248 11.9217 13.9082 12.7012 13.2963 13.313L14.5335 14.5502Z"
+                                fill="#159643" />
+                            <path
+                                d="M12.0583 12.075C12.4253 11.7079 12.6752 11.2402 12.7765 10.731C12.8777 10.2218 12.8257 9.6941 12.627 9.21449C12.4284 8.73489 12.0919 8.32498 11.6603 8.03657C11.2286 7.74817 10.7212 7.59424 10.2021 7.59424C9.68293 7.59424 9.17546 7.74817 8.74382 8.03657C8.31217 8.32498 7.97574 8.73489 7.77706 9.21449C7.57838 9.6941 7.52637 10.2218 7.62761 10.731C7.72886 11.2402 7.97881 11.7079 8.34585 12.075L9.5839 10.8378C9.46151 10.7154 9.37816 10.5595 9.34437 10.3898C9.31059 10.2201 9.32791 10.0441 9.39412 9.88425C9.46034 9.72436 9.57248 9.5877 9.71637 9.49154C9.86026 9.39539 10.0294 9.34407 10.2025 9.34407C10.3756 9.34407 10.5447 9.39539 10.6886 9.49154C10.8325 9.5877 10.9446 9.72436 11.0109 9.88425C11.0771 10.0441 11.0944 10.2201 11.0606 10.3898C11.0268 10.5595 10.9435 10.7154 10.8211 10.8378L12.0583 12.075Z"
+                                fill="#159643" />
+                        </svg> Your Episodes</a></li>
+            </ul>
+        </div>
+        <div class="tracksMenu">
+            <ul>
+                <li><a href="#">FAV</a></li>
+                <li><a href="#">Daily Mix 1</a></li>
+                <li><a href="#">Discover Weekly</a></li>
+                <li><a href="#">Malayalam</a></li>
+                <li><a href="#">Dance / Electronix Mix</a></li>
+                <li><a href="#">EDM / Popular</a></li>
+            </ul>
+        </div>
+
+        <div class="installMenu">
+            <i class="fa-regular fa-circle-arrow-down"></i> Install App
+        </div>
+
+        <!-- <i class="fa-solid fa-angle-right"></i>
+          <i class="fa-solid fa-angle-left"></i> -->
+
+    </header>
+    <main>
+        <div id="userName"><img src="images/userImage.png" class="profilePic" alt="profile picture">Hi Angel!</div>
+        <section id="featured">
+            <h1 class="sectionTitle">Good morning</h1>
+            <div id="featuredWrapper">
+                <article class="cards"><i class="fa-solid fa-heart"></i> Liked Songs</article>
+                <article class="cards"><img alt="netflix cover image" src="images/netflixImage.jpg">Netflix Playlist</article>
+                <article class="cards"><img alt="RD cover image" src="images/rd.jpg">K/DA</article>
+                <article class="cards"><img alt="Dance remix cover image" src="images/dance.jpg">Dance Mix</article>
+            </div>
+        </section>
+        <section id="musicPlayer">
+            <!-- Music Player content -->
+        </section>
+        <section id="playlistGrid">
+            <h2 class="sectionTitle">Shows you might like</h2>
+            <a class="seeMoreBtn" href="detailPage/index.html">SEE ALL</a>
+            <div id="playlistWrapper">
+                <article class="card">
+                    <img src="images/card1.png" alt="card1">
+                    <div class="deets">
+                        Weekly motivation..
+                        <span>Ben Ina Scott</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="images/card2.png" alt="card2" >
+                    <div class="deets">
+                        MEDITATION SELF
+                        <span>Ibn Hussain Aleen</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="images/card3.png" alt="card3">
+                    <div class="deets">
+                        Words beyond act...
+                        <span>Samuel Scott</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="images/card4.png" alt="card4">
+                    <div class="deets">
+                        The Alexa Show
+                        <span>Adriana Tom</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="images/card1.png" alt="card1">
+                    <div class="deets">
+                        Weekly motivation..
+                        <span>Ben Ina Scott</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="images/card2.png" alt="card2">
+                    <div class="deets">
+                        MEDITATION SELF
+                        <span>Ibn Hussain Aleen</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="images/card3.png" alt="card3">
+                    <div class="deets">
+                        Words beyond act...
+                        <span>Samuel Scott</span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="images/card4.png" alt="card4">
+                    <div class="deets">
+                        The Alexa Show
+                        <span>Adriana Tom</span>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+        <section id="playlistDetail">
+            <div id="miniPlayer">
+                <img src="images/card2.png" alt="miniplayer cover image">
+                <div class="songTitle">
+                    Dreaming On..
+                </div>
+            </div>
+            <div class="player">
+                <div class="controls">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+            </div>
+            <div class="soundList">
+                <svg width="189" height="15" viewBox="0 0 189 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Group 9">
+                    <g id="Group 6">
+                    <line id="Line 1" x1="9" y1="4.5" x2="16" y2="4.5" stroke="white"/>
+                    <line id="Line 2" x1="1" y1="8.5" x2="16" y2="8.5" stroke="white"/>
+                    <line id="Line 3" x1="1" y1="12.5" x2="16" y2="12.5" stroke="white"/>
+                    <path id="Polygon 1" d="M6 4L1.5 6.59808L1.5 1.40192L6 4Z" fill="white"/>
+                    </g>
+                    <g id="Group 7">
+                    <rect id="Rectangle 13" x="42.8228" y="1" width="8" height="12" rx="0.5" stroke="white"/>
+                    <circle id="Ellipse 2" cx="46.8228" cy="8.5" r="1.5" stroke="white"/>
+                    <circle id="Ellipse 3" cx="46.8228" cy="3.5" r="0.5" stroke="white"/>
+                    <path id="Vector 1" d="M39.9751 0.855469H35.6768C35.1245 0.855469 34.6768 1.30318 34.6768 1.85547V9.19049C34.6768 9.74278 35.1245 10.1905 35.6768 10.1905H39.9751" stroke="white"/>
+                    <line id="Line 4" x1="37.3511" y1="12.9199" x2="39.9751" y2="12.9199" stroke="white"/>
+                    </g>
+                    <path id="Vector" d="M80.945 0.208496L80.293 1.00329C81.87 2.5262 82.863 4.69496 82.863 7.10537C82.863 9.51579 81.869 11.6845 80.293 13.2075L80.944 14.0022C81.8641 13.1272 82.5991 12.0619 83.102 10.8745C83.6048 9.68705 83.8646 8.40346 83.8647 7.1056C83.8648 5.80775 83.6052 4.52411 83.1025 3.33659C82.5998 2.14906 81.865 1.08371 80.945 0.208496ZM78.673 2.97933L78.022 3.77412C78.4467 4.20893 78.784 4.72752 79.0143 5.2996C79.2445 5.87168 79.363 6.4858 79.3629 7.10611C79.3628 7.72643 79.2441 8.34051 79.0137 8.91251C78.7833 9.48452 78.4458 10.003 78.021 10.4377L78.672 11.2325C79.712 10.1908 80.363 8.72829 80.363 7.10641C80.363 5.48454 79.713 4.021 78.673 2.97933ZM68 3.98037V10.2304H70.804L76 13.3554V0.855371L70.804 3.98037H68ZM75 2.65954V11.5512L71.072 9.18871H69V5.02204H71.072L75 2.65954Z" fill="white"/>
+                    <rect id="Rectangle 14" x="92" y="5" width="97" height="4" rx="2" fill="#C4C4C4"/>
+                    </g>
+                    </svg>                    
+            </div>
+        </section>
+        <section id="browse">
+            <!-- Browse Section content -->
+        </section>
+    </main>
+</body>
+
+</html>
